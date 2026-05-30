@@ -46,24 +46,36 @@ export default function ProjectsSection() {
               ))}
             </div>
 
-            {/* External Links (GitHub & Live Demo) */}
+            {/* External Links (GitHub & Live Demo) or WIP Status */}
             <div className="flex gap-6 mt-6 pt-5 border-t border-slate-100 dark:border-slate-800">
-              <a 
-                href={project.githubLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm font-bold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-              >
-                GitHub →
-              </a>
-              <a 
-                href={project.liveLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
-              >
-                Live Demo →
-              </a>
+              {project.workInProgress ? (
+                <span className="text-sm font-bold text-amber-500 flex items-center gap-2">
+                  Work in progress...
+                </span>
+              ) : (
+                <>
+                  {project.githubLink && (
+                    <a 
+                      href={project.githubLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm font-bold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                    >
+                      GitHub →
+                    </a>
+                  )}
+                  {project.liveLink && (
+                    <a 
+                      href={project.liveLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+                    >
+                      Live Demo →
+                    </a>
+                  )}
+                </>
+              )}
             </div>
           </div>
         ))}

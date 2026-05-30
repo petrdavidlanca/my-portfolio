@@ -26,13 +26,12 @@ export default function Hero() {
 
       {/* Subheading / Tagline */}
       <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-500 dark:text-slate-400 mb-8 relative z-10">
-        Studying...
+        Studying computer science...
       </h2>
 
       {/* Short Biography */}
       <p className="max-w-2xl text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-12 leading-relaxed relative z-10">
-        At the Brno University of Technology, I am currently in my 2nd year of a Bachelor's degree in Computer Science
-        at the Faculty of Information Technology.
+        at Brno University of Technology, entering my third year at the Faculty of Information Technology.
       </p>
 
       {/* Call to Action Buttons */}

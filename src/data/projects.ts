@@ -6,13 +6,15 @@ export const projects = [
     techStack: ["Html", "CSS", "JavaScript", "Node.js", "Express"],
     liveLink: "https://globalchat-m9xl.onrender.com",
     githubLink: "https://github.com/petrdavidlanca/globalChat",
-    image: "/images/chat.png"
+    image: "/images/chat.png",
+    workInProgress: false
   },
   {
     id: 2,
     title: "Rougelike game",
     description: "Physics-based 2D pixelart rougelike game set in space",
     techStack: ["Godot", "GDScript", "Pixel Art"],
-    image: "/images/game.png"
+    image: "/images/game.png",
+    workInProgress: true
   }
 ];

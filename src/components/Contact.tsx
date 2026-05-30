@@ -13,8 +13,8 @@ export default function Contact() {
       
       {/* Contact Description Text */}
       <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-12 leading-relaxed">
-        I am currently looking for new opportunities. Whether you have a question, 
-        a project proposal, or just want to say hi, my inbox is always open. 
+        I am currently looking for new opportunities. Whether you have a question 
+        or just want to say hi, my inbox is always open. 
         I'll try my best to get back to you!
       </p>
 
