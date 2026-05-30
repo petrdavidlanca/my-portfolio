@@ -7,5 +7,12 @@ export const projects = [
     liveLink: "https://globalchat-m9xl.onrender.com",
     githubLink: "https://github.com/petrdavidlanca/globalChat",
     image: "/images/chat.png"
+  },
+  {
+    id: 2,
+    title: "Rougelike game",
+    description: "Physics-based 2D pixelart rougelike game set in space",
+    techStack: ["Godot", "GDScript", "Pixel Art"],
+    image: "/images/game.png"
   }
 ];
